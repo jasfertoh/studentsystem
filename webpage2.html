@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage 2</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/addstudent.js"></script>
+    <script src="js/typed.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="splash">
+        <h1 class="fade-in">Welcome, I'm <span class="animate"></span>.</h1>
+    </div>
+    <div id="particles-js">
+        <div class="wrapper">
+            <div class="content">
+                <div class="heading">
+                    <h1 id="title">Student Management System</h1>
+                    <img id="logo" src="images/itelogo.png" width='100' height='100'>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="webpage1.html"><img src="images/home-icon-white-11.jpg" alt="Webpage 1" width=15 height=15 style="transform: scale(1.5)"></a></li>
+                        <li><a href="webpage2.html">Add Student</a></li>
+                    </ul>
+                </nav>
+                <div class="addstudent">
+                    <form id="studentform">
+                        Surname:<br>
+                        <input type="text" id="surname">
+                        <span class="error" id="surname_msg" style="display: none;">* Surname cannot be empty and can only contain alphabets</span><br>
+                        Name:<br>
+                        <input type="text" id="name">
+                        <span class="error" id="name_msg" style="display: none;">* Name cannot be empty and can only contain alphabets</span><br>
+                        Gender:
+                        <input type="radio" name="gender" id="gender" value="Female">Female
+                        <input type="radio" name="gender" id="gender" value="Male">Male
+                        <span class="error" id="gender_msg" style="display: none;">* Gender cannot be empty</span><br>
+                        Address:<br>
+                        <textarea id="address"></textarea>
+                        <span class="error" id="address_msg" style="display: none;">* Address cannot be empty</span><br>
+                        Email:<br>
+                        <input type="email" id="email">
+                        <span class="error" id="email_msg" style="display: none;">* Email cannot be empty and must be valid</span><br>
+                        Phone Number:<br>
+                        <input type="number" id="phone">
+                        <span class="error" id="phone_msg" style="display: none;">* Phone no. cannot be empty and can only be numeric</span><br>    
+                        <input type="submit" id="insert" value="Insert"></input> <input type="reset" id="cancel" value="Cancel"></input>
+                    </form>   
+                </div>
+                <div class="table">
+                    <table border="1" width="100%">
+                        <tbody>
+                            <tr>
+                                <th>ID</th>
+                                <th>Surname</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <footer class="footer">Copyright &copy; ITE - All rights Reserved.</footer>
+        </div>
+    </div>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
